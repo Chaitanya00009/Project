@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+
+html{
+    overflow: hidden;
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    /* background-color: red; */
+    background-color:rgba(255,0,0,0.8);
+    padding: 0;
+    height: 4vw; 
+    color: white;
+}
+
+
+nav .left {
+    display: flex; /* Create a flex container for left items */
+    align-items: center; /* Vertically center left items */
+}
+
+nav .left a {
+    color: white; /* Ensure link text is white */
+    text-decoration: none; /* Remove underline */
+    padding: 0 10px; /* Add padding for spacing */
+}
+
+nav .left a:not(:last-child) {
+    margin-right: 5px; /* Add margin only to the first link */
+}
+
+nav .right {
+    display: flex; /* Create a flex container for left items */
+    align-items: center; /* Vertically center left items */
+}
+ nav a{
+   padding: 2vw; /* Padding for anchor tags */
+   color: white; /* Set text color */
+   text-decoration: none; /* Remove underline */
+   margin: 0 10px; /* Margin between links */
+} 
+
+nav select {
+    margin-right: 1vw;
+     /* margin on the right of the select dropdown */
+    /* background-color: red; */
+    background-color: rgba(255,0,0,0.1);
+    outline: none;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    appearance: none;
+    
+}
+
+nav select option {
+    background-color: black; /* Black background for options */
+    color: white; /* White text for options */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.logo {
+    flex: 1;
+    text-align: center; /* Center the logo */
+}
+
+.logo img{
+    width: 30vw;
+    height: 5vw;
+    margin-left: 10vw;
+    border: none;
+}
+
+.tel {
+    text-align: right; /* Align the telephone number to the right */
+    color: white;
+}
+
+.one{
+    margin-bottom: -0.1vw;
+    /* background: linear-gradient(to right, #151515, #2e2e2e); */
+    background: linear-gradient(to right, #151515, #2e2e2e);
+    /* background-color: black; */
+    padding: 0;
+
+}
+
+#call{
+    width: 2vw;
+    margin-right: 0.5vw;
+}
+
+main{
+    background-image:url('../Multimedia/one.jpg');
+    opacity: 6;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position:center bottom ; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    min-height: 100vh;
+     /* Ensures the main section takes at least 100% of the viewport height */
+    padding: 20px;
+    opacity: 0.9;
+}
+
+
+#link{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
